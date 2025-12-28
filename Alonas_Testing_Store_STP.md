@@ -362,7 +362,7 @@ Testing phase can be concluded when:
 
 - [Playwright Documentation](https://playwright.dev/python/)
 - [pytest Documentation](https://docs.pytest.org/)
-- [Project Repository](https://github.com/username/e-commerce-test-playwright-python)
+- [Project Repository](https://github.com/AlonaGoncharuk/alonas-testing-store)
 - [Application URL](https://alonas-testing-store.lovable.app/)
 
 ---
