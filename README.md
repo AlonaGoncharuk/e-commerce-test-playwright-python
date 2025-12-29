@@ -4,7 +4,7 @@ Test automation project for **Alona's Testing Store**, a demo e-commerce web app
 
 ## 📋 Documentation
 
-For the complete testing strategy, scope, test matrix, and detailed test cases, see the [Software Test Plan (STP)](./Alonas_Testing_Store_STP.md).
+For the complete testing strategy, scope, test matrix, and detailed test cases, see the [Software Test Plan (STP)](docs/Alonas_Testing_Store_STP.md).
 
 ## 🎯 Project Overview
 
@@ -100,4 +100,4 @@ This project serves as both:
 - A **real QA automation framework** with production-ready practices
 - A **portfolio/demo artifact** showcasing modern test automation skills
 
-For detailed test cases, test matrix, and comprehensive testing strategy, refer to the [STP document](./Alonas_Testing_Store_STP.md).
+For detailed test cases, test matrix, and comprehensive testing strategy, refer to the [STP document](docs/Alonas_Testing_Store_STP.md).
