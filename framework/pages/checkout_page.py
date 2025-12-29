@@ -70,6 +70,10 @@ class CheckoutPage(BasePage):
         expect(self.empty_cart_checkout).to_be_visible()
         return self
 
+    def assert_checkout_button_disabled(self) -> CheckoutPage:
+        expect(self.place_order).to_be_disabled()
+        return self
+
     def fill_customer_info(self, full_name: str, email: str, address: str, city: str, country: str) -> None:
         self.input_fullname.fill(full_name)
         self.input_email.fill(email)

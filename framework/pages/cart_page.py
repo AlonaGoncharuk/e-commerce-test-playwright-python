@@ -6,6 +6,7 @@ from framework.pages.base_page import BasePage
 from framework.components.header import HeaderComponent
 from framework.components.coupon_input import CouponInputComponent
 from framework.components.cart_item import CartItemComponent
+from framework.pages.home_page import HomePage
 from framework.utils.money import money_to_float
 
 
@@ -47,6 +48,10 @@ class CartPage(BasePage):
     def total(self):
         return self.by_test_id("cart-total")
 
+    @property
+    def continue_shopping_btn(self):
+        return self.by_test_id("continue-shopping")
+
     def open(self) -> CartPage:
         self.goto(self.PATH)
         return self
@@ -63,3 +68,11 @@ class CartPage(BasePage):
 
     def get_total_value(self) -> float:
         return money_to_float(self.total.inner_text())
+
+    def assert_empty_cart(self) -> CartPage:
+        expect(self.empty_cart).to_be_visible()
+        return self
+
+    def continue_shopping(self) -> HomePage:
+        self.continue_shopping_btn.click()
+        return HomePage(self.page, self.settings)
