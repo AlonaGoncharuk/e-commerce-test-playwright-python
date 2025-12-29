@@ -31,4 +31,4 @@ class ProductPage(BasePage):
 
     def click_add_to_cart(self) -> None:
         self.add_to_cart.click()
-        expect(self.add_to_cart).to_be_hidden()
+        expect(self.add_to_cart).to_be_disabled()

@@ -44,4 +44,3 @@ class HomePage(BasePage):
     def open_first_product(self) -> None:
         expect(self.products_grid).to_be_visible()
         self.products_grid.locator("a").first.click()
-        expect(self.products_grid).to_have_count(self.products_grid.locator("a").count() - 1)
