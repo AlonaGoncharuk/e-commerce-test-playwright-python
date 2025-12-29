@@ -35,7 +35,7 @@ class CouponInputComponent:
         expect(self.applied_banner).to_be_visible()
 
     def remove(self) -> None:
-        self.remove_coupon.click()
+        self.input.fill("")
 
     def assert_error_contains(self, text: str) -> None:
         expect(self.error).to_be_visible()

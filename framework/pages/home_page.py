@@ -44,3 +44,7 @@ class HomePage(BasePage):
     def open_first_product(self) -> None:
         expect(self.products_grid).to_be_visible()
         self.products_grid.locator("a").first.click()
+
+    def assert_on_page(self) -> HomePage:
+        expect(self.products_grid).to_be_visible()
+        return self.wait_until_loaded()
